@@ -20,19 +20,19 @@ export PROJECT_NAME="MulleBase64"
 #
 #
 #
-export PROJECT_IDENTIFIER="MulleBase64"
 
-
-#
-#
-#
-export PROJECT_DOWNCASE_IDENTIFIER="mulle_base64"
 
 
 #
 #
 #
-export PROJECT_UPCASE_IDENTIFIER="MULLE_BASE64"
+
+
+
+#
+#
+#
+
 
 
 #
