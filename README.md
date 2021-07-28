@@ -22,7 +22,7 @@ to **NSData**.
 Use [mulle-sde](//github.com/mulle-sde) to add MulleBase64 to your project:
 
 ``` console
-mulle-sde dependency add --c --github MulleWeb MulleBase64
+mulle-sde dependency add --objc --github MulleWeb MulleBase64
 ```
 
 ## Install
