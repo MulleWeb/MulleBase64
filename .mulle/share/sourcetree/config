@@ -1,1 +1,2 @@
-Foundation;${FOUNDATION_NODETYPE:-tar};no-singlephase;45438D9A-FF4E-4916-821A-6D5E3163AD18;${FOUNDATION_URL:-https://github.com/MulleFoundation/Foundation/archive/${MULLE_TAG}.tar.gz};${FOUNDATION_BRANCH};${FOUNDATION_TAG:-latest};;
+Foundation;${FOUNDATION_NODETYPE:-tar};no-singlephase;BB9A1382-8C44-460A-8813-DC45CAF93DDE;${FOUNDATION_URL:-https://github.com/MulleFoundation/Foundation/archive/${MULLE_TAG}.tar.gz};${FOUNDATION_BRANCH};${FOUNDATION_TAG:-latest};;
+mulle-objc-list;${MULLE_OBJC_LIST_NODETYPE:-tar};no-all-load,no-bequeath,no-cmake-inherit,no-header,no-link;4E657EF9-4701-447D-9EF3-5F80356E66F0;${MULLE_OBJC_LIST_URL:-https://github.com/mulle-objc/mulle-objc-list/archive/${MULLE_TAG}.tar.gz};${MULLE_OBJC_LIST_BRANCH};${MULLE_OBJC_LIST_TAG:-latest};;
