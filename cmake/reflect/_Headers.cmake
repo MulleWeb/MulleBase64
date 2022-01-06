@@ -55,5 +55,6 @@ src/MulleBase64.h
 src/MulleObjCLoader+MulleBase64.h
 src/NSData+Base64.h
 src/base64.h
+src/reflect/_MulleBase64-versioncheck.h
 )
 
