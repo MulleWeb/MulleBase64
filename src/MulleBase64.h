@@ -7,7 +7,7 @@
  *
  *  version:  major, minor, patch
  */
-#define MULLE_BASE64_VERSION  ((0 << 20) | (0 << 8) | 1)
+#define MULLE_BASE64_VERSION  ((0 << 20) | (0 << 8) | 2)
 
 
 static inline unsigned int   MulleBase64_get_version_major( void)
@@ -36,3 +36,11 @@ extern uint32_t   MulleBase64_get_version( void);
 */
 #import "NSData+Base64.h"
 
+
+
+
+#ifdef __has_include
+# if __has_include( "_MulleBase64-versioncheck.h")
+#  include "_MulleBase64-versioncheck.h"
+# endif
+#endif

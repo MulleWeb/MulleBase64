@@ -6,16 +6,11 @@ Adds [base64](https://en.wikipedia.org/wiki/Base64) coding and decoding support
 to **NSData**.
 
 
+
 ### You are here
 
-```
-   .=============.
-   | MulleBase64 |
-   '============='
-   .-------------.
-   | Value       |
-   '-------------'
-```
+![Overview](overview.dot.svg)
+
 
 ## Add
 
