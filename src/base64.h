@@ -21,7 +21,7 @@
 #include <stddef.h>
 
 // this is code originally from Helge Hess, given by his kind permission
-// make pretende _destSize parameter removed, as there is no bounds checking!
+// make pretend _destSize parameter removed, as there is no bounds checking!
 void   base64_encode( const unsigned char *_src,
                      size_t _srcLen, 
                      unsigned char *_dest,
