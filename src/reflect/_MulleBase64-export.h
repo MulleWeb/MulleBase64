@@ -9,5 +9,12 @@
  *
  *      mulle-sde environment set MULLE_MATCH_TO_C_RUN DISABLE
  */
+#ifndef mulle_base64_export_h__
+#define mulle_base64_export_h__
+
+
 #import "MulleObjCLoader+MulleBase64.h"
 #import "NSData+Base64.h"
+
+
+#endif
