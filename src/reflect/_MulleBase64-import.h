@@ -11,21 +11,17 @@
  *
  */
 
-// You can tweak the following #import with these commands.
-// (Use 7B82831A-418F-4667-8881-D270B67684B3 instead of MulleFoundationBase if there are duplicate entries)
-//    remove #import: : `mulle-sde dependency mark MulleFoundationBase no-header`
-//    rename:              `mulle-sde dependency|library set MulleFoundationBase include whatever.h`
-//    reorder:             `mulle-sde dependency move MulleFoundationBase <up|down>`
-//    toggle #import:     `mulle-sde dependency mark MulleFoundationBase [no-]import`
-//    toggle public:       `mulle-sde dependency mark MulleFoundationBase [no-]public`
-//    toggle optional:     `mulle-sde dependency mark MulleFoundationBase [no-]require`
-//    remove for platform: `mulle-sde dependency mark MulleFoundationBase no-platform-<uname>`
+// To remove the following dependency (headers and library) completely:
+//   `mulle-sde dependency remove MulleFoundationBase`
+// (Use 7B82831A-418F-4667-8881-D270B67684B3 instead of MulleFoundationBase, if there are duplicate entries)
+//
+// You can tweak the following #import with these commands:
+//    remove #import      : `mulle-sde dependency mark MulleFoundationBase no-header`
+//    rename              : `mulle-sde dependency|library set MulleFoundationBase include whatever.h`
+//    reorder             : `mulle-sde dependency move MulleFoundationBase <up|down>`
+//    toggle #import      : `mulle-sde dependency mark MulleFoundationBase [no-]import`
+//    toggle public       : `mulle-sde dependency mark MulleFoundationBase [no-]public`
+//    toggle optional     : `mulle-sde dependency mark MulleFoundationBase [no-]require`
+//    remove for platform : `mulle-sde dependency mark MulleFoundationBase no-platform-<uname>`
 //        (use `mulle-sourcetree-to-c --unames` to list known values)
 #import <MulleFoundationBase/MulleFoundationBase.h>   // MulleFoundationBase
-
-#ifdef __has_include
-# if __has_include( "_MulleBase64-include.h")
-#  include "_MulleBase64-include.h"
-# endif
-#endif
-
