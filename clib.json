@@ -1,0 +1,32 @@
+{
+   "name" : "MulleBase64",
+   "version" : "0.0.6",
+   "description" : "💬 Decode and encode NSData with base64",
+   "keywords" : [],
+   "license" : "BSD-3-Clause",
+   "repo" : "MulleWeb/MulleBase64",
+   "src" : [
+      "src/base64.c",
+      "src/base64.h",
+      "src/generic/import-private.h",
+      "src/generic/import.h",
+      "src/MulleBase64.h",
+      "src/MulleBase64.m",
+      "src/MulleObjCLoader+MulleBase64.h",
+      "src/MulleObjCLoader+MulleBase64.m",
+      "src/NSData+Base64.h",
+      "src/NSData+Base64.m",
+      "src/reflect/objc-loader.inc",
+      "src/reflect/_MulleBase64-export.h",
+      "src/reflect/_MulleBase64-import-private.h",
+      "src/reflect/_MulleBase64-import.h",
+      "src/reflect/_MulleBase64-include-private.h",
+      "src/reflect/_MulleBase64-include.h",
+      "src/reflect/_MulleBase64-provide.h",
+      "src/reflect/_MulleBase64-versioncheck.h"
+   ],
+   "dependencies" : {
+      "MulleFoundation/MulleFoundationBase": "*",
+      "mulle-objc/mulle-objc-list": "*"
+   }
+}
