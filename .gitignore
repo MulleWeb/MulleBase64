@@ -64,3 +64,5 @@ coverage*.html
 *.gcda
 *.gcno
 cola/wilted/
+*-build-*/
+.idea/

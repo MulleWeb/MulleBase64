@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.15)
 
-project( MulleBase64 VERSION 0.0.7 LANGUAGES C)
+project( MulleBase64 VERSION 0.0.8 LANGUAGES C)
 #
 # Turn a "Library" into an "Executable"
 # * touch src/main.m
