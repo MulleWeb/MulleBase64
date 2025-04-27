@@ -6,9 +6,9 @@ Adds [base64](https://en.wikipedia.org/wiki/Base64) coding and decoding support
 to **NSData**.
 
 
-| Release Version                                       | Release Notes
-|-------------------------------------------------------|--------------
-| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleBase64.svg) [![Build Status](https://github.com/MulleWeb/MulleBase64/workflows/CI/badge.svg)](//github.com/MulleWeb/MulleBase64/actions) | [RELEASENOTES](RELEASENOTES.md) |
+| Release Version                                       | Release Notes  | AI Documentation
+|-------------------------------------------------------|----------------|---------------
+| ![Mulle kybernetiK tag](https://img.shields.io/github/tag/MulleWeb/MulleBase64.svg) [![Build Status](https://github.com/MulleWeb/MulleBase64/workflows/CI/badge.svg)](//github.com/MulleWeb/MulleBase64/actions) | [RELEASENOTES](RELEASENOTES.md) | [DeepWiki for MulleBase64](https://deepwiki.com/MulleWeb/MulleBase64)
 
 
 
