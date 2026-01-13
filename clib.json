@@ -1,6 +1,6 @@
 {
    "name" : "MulleBase64",
-   "version" : "0.0.6",
+   "version" : "0.0.9",
    "description" : "💬 Decode and encode NSData with base64",
    "keywords" : [],
    "license" : "BSD-3-Clause",
