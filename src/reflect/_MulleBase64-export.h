@@ -13,7 +13,7 @@
 #define _mulle_base64__export_h__
 
 
-#import "MulleObjCLoader+MulleBase64.h"
+#import "MulleObjCDeps+MulleBase64.h"
 #import "NSData+Base64.h"
 
 
