@@ -1,13 +1,7 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleBase64 VERSION 0.0.9 LANGUAGES C)
-#
-# Turn a "Library" into an "Executable"
-# * touch src/main.m
-# Then set MULLE_PROJECT_TYPE to "Executable".
-# * mulle-sde reflect
-# * mulle-sde craft
-#
+project( MulleBase64 VERSION 0.0.10 LANGUAGES C)
+
 set( MULLE_PROJECT_TYPE "Library")
 
 ### mulle-sde environment
@@ -21,55 +15,40 @@ include( Environment)
 
 include( Files)
 
-if( "${MULLE_PROJECT_TYPE}" STREQUAL "Executable")
+### Library
 
-   ### Executable
+if( HEADERS_PHASE)
+   install( FILES ${INSTALL_PUBLIC_HEADERS}  DESTINATION "include/${PROJECT_NAME}")
+   install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/${PROJECT_NAME}")
+   install( FILES ${INSTALL_CMAKE_INCLUDES}  DESTINATION "include/${PROJECT_NAME}/cmake")
 
-   include( Dependencies)
-   include( Executable)
-   include( InstallExecutable)
-
-   # only for Executable
-   include( Motd OPTIONAL)
-
-
-elseif( "${MULLE_PROJECT_TYPE}" STREQUAL "Framework")
-
-   ### Framework
-
-   include( Dependencies)
-   include( Framework)
-
-
-
-   include( InstallFramework)
-
-elseif( "${MULLE_PROJECT_TYPE}" STREQUAL "Library")
-
-   ### Library
-
-   if( HEADERS_PHASE)
-      install( FILES ${INSTALL_PUBLIC_HEADERS}  DESTINATION "include/${PROJECT_NAME}")
-      install( FILES ${INSTALL_PRIVATE_HEADERS} DESTINATION "include/${PROJECT_NAME}")
-      install( FILES ${INSTALL_CMAKE_INCLUDES}          DESTINATION "include/${PROJECT_NAME}/cmake")
-
-      # short cut out
-      if( NOT COMPILE_PHASE AND NOT LINK_PHASE)
-         return()
-      endif()
+   # short cut out
+   if( NOT COMPILE_PHASE AND NOT LINK_PHASE)
+      return()
    endif()
+endif()
 
-   if( LINK_PHASE)
-      include( Dependencies OPTIONAL)
-   endif()
+if( LINK_PHASE)
+   include( Dependencies OPTIONAL)
+endif()
 
-   include( Library)
-   include( InstallLibrary)
+include( Library)
 
-else()
 
-   message( ERROR "Unknown project type \"${MULLE_PROJECT_TYPE}")
+# use LIBRARY_COMPILE_TARGET for compiler options
+target_compile_definitions( "${LIBRARY_COMPILE_TARGET}" PUBLIC)
+target_compile_options( "${LIBRARY_COMPILE_TARGET}" PUBLIC)
+# use LIBRARY_LINK_TARGET for linker options
+if( LINK_PHASE)
+   target_link_options( "${LIBRARY_LINK_TARGET}" PUBLIC)
+endif()
 
+include( InstallLibrary)
+
+
+if( LINK_PHASE)
+   include( InstallCMakeInclude)
+   include( InstallCMakePackage)
 endif()
 
 include( FinalOutput OPTIONAL)

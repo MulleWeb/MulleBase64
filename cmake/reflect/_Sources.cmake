@@ -20,5 +20,5 @@ src/base64.c
 # contents selected with patternfile ??-source--stage2-sources
 #
 set( STAGE2_SOURCES
-src/MulleObjCLoader+MulleBase64.m
+src/MulleObjCDeps+MulleBase64.m
 )

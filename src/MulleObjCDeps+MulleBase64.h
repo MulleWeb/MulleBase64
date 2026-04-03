@@ -7,7 +7,7 @@
 // depend on this library to properly declare their load in their
 // MulleObjcLoader class.
 //
-@interface MulleObjCLoader( MulleBase64)
+@interface MulleObjCDeps( MulleBase64)
 
 + (struct _mulle_objc_dependency *) dependencies;
 
