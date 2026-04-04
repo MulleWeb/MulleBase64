@@ -1,31 +1,10 @@
-### 0.0.9
+## 0.1.0
 
-Various small improvements
 
-### 0.0.8
 
-Various small improvements
 
-### 0.0.7
 
-Various small improvements
 
-### 0.0.6
 
-* Various small improvements
-
-### 0.0.5
-
-* Various small improvements
-
-### 0.0.4
-
-* Various small improvements
-
-### 0.0.3
-
-* moved generic headers into src/generic
-
-### 0.0.2
-
-* Various small improvements
+* add MulleObjCDeps+MulleBase64.h/.m to expose dependencies() so the ObjC loader can discover this library's NSData+Base64 category
+* include generated src/reflect/objc-deps.inc with an entry for NSData/Base64 to ensure runtime registration
