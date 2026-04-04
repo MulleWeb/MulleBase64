@@ -6,6 +6,7 @@
       name="MulleBase64";
       user="MulleWeb";
       repo="MulleBase64";
+      version="0.1.0";
       homepage="https://github.com/MulleWeb/MulleBase64";
       license="BSD-3-Clause";
    };
