@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleBase64 VERSION 0.1.0 LANGUAGES C)
+project( MulleBase64 VERSION 0.1.1 LANGUAGES C)
 
 set( MULLE_PROJECT_TYPE "Library")
 
