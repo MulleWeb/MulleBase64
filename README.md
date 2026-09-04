@@ -17,6 +17,11 @@ to **NSData**.
 
 
 
+## Documentation & Guides
+
+* [API Summary](asset/dox/api/toc)
+
+
 ### You are here
 
 ![Overview](overview.dot.svg)
