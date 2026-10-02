@@ -1,6 +1,6 @@
 {
    "name" : "MulleBase64",
-   "version" : "0.1.2",
+   "version" : "0.1.3",
    "description" : "💬 Decode and encode NSData with base64",
    "keywords" : [],
    "license" : "BSD-3-Clause",
@@ -28,6 +28,6 @@
    ],
    "dependencies" : {
       "MulleFoundation/MulleFoundationBase": "*",
-      "mulle-objc/mulle-objc-list": "*"
+      "mulle-objc/mulle-objc-tools": "*"
    }
 }

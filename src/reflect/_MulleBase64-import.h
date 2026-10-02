@@ -3,17 +3,17 @@
  *   `mulle-sde reflect` and any edits will be lost.
  *   Suppress generation of this file with:
  *
- *      mulle-sde environment set MULLE_SOURCETREE_TO_C_IMPORT_FILE DISABLE
+ *      mulle-sde environment --global set MULLE_SOURCETREE_TO_C_IMPORT_FILE DISABLE
  *
  *   To not let mulle-sourcetree-to-c generate any header files:
  *
- *      mulle-sde environment set MULLE_SOURCETREE_TO_C_RUN DISABLE
+ *      mulle-sde environment --global set MULLE_SOURCETREE_TO_C_RUN DISABLE
  *
  */
 
 // To remove the following dependency (headers and library) completely:
 //   `mulle-sde dependency remove MulleFoundationBase`
-// (Use 7B82831A-418F-4667-8881-D270B67684B3 instead of MulleFoundationBase, if there are duplicate entries)
+// (Use 59928543-702A-4079-B286-E58F42C1403F instead of MulleFoundationBase, if there are duplicate entries)
 //
 // You can tweak the following #import with these commands:
 //    remove #import      : `mulle-sde dependency mark MulleFoundationBase no-header`

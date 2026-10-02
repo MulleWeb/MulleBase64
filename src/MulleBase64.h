@@ -41,7 +41,7 @@
  *
  *  version:  major, minor, patch
  */
-#define MULLE_BASE64_VERSION  ((0UL << 20) | (1 << 8) | 2)
+#define MULLE_BASE64_VERSION  ((0UL << 20) | (1 << 8) | 3)
 
 
 static inline unsigned int   MulleBase64_get_version_major( void)

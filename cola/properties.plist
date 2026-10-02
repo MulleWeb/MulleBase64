@@ -3,10 +3,12 @@
    {
       description="💬 Decode and encode NSData with base64";
       domain="github";
+      language="c";
+      dialect="objc";
       name="MulleBase64";
       user="MulleWeb";
       repo="MulleBase64";
-      version="0.1.2";
+      version="0.1.3";
       homepage="https://github.com/MulleWeb/MulleBase64";
       license="BSD-3-Clause";
    };

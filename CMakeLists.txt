@@ -1,6 +1,6 @@
 cmake_minimum_required( VERSION 3.13...99.99)
 
-project( MulleBase64 VERSION 0.1.2 LANGUAGES C)
+project( MulleBase64 VERSION 0.1.3 LANGUAGES C)
 
 set( MULLE_PROJECT_TYPE "Library")
 
@@ -47,8 +47,8 @@ include( InstallLibrary)
 
 
 if( LINK_PHASE)
-   include( InstallCMakeInclude)
-   include( InstallCMakePackage)
+   include( AddSubdirectorySupport)
+   include( FindPackageSupport)
 endif()
 
 include( FinalOutput OPTIONAL)
