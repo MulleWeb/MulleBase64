@@ -8,7 +8,6 @@
       name="MulleBase64";
       user="MulleWeb";
       repo="MulleBase64";
-      version="0.1.3";
       homepage="https://github.com/MulleWeb/MulleBase64";
       license="BSD-3-Clause";
    };
@@ -25,9 +24,9 @@
       {
          description="📒 Lists mulle-objc runtime information contained in executables.";
          domain="github";
-         name="mulle-objc-list";
-         repo="mulle-objc-list";
-         url="https://github.com/mulle-objc/mulle-objc-list";
+         name="mulle-objc-tools";
+         repo="mulle-objc-tools";
+         url="https://github.com/mulle-objc/mulle-objc-tools";
          user="mulle-objc";
       }
    );
